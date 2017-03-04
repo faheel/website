@@ -54,34 +54,20 @@ footer h2 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .grid-item {
-    width: calc(100% / 2);
+    width: 50%;     /* 2 per row */
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .grid-item {
-    width: calc(100% / 2);
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .grid-item {
-    width: calc(100% / 3);
+    width: 33.333333%;  /* 3 per row */
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .grid-item {
-    width: calc(100% / 3);
-  }
-}
-
-/* Ultra large devices (large TV, 1440px and up) */
+/* Large devices (big desktops and TVs, 1440px and up) */
 @media (min-width: 1440px) {
   .grid-item {
-    width: calc(100% / 4);
+    width: 25%;     /* 4 per row */
   }
 }
