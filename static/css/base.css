@@ -35,6 +35,7 @@ footer {
 footer h2 {
   font-weight: 300;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+  text-align: center;
 }
 
 .grid-container {   /* flex parent */
@@ -77,23 +78,29 @@ footer h2 {
 .grid-item:nth-child(11) { background-image: linear-gradient(135deg, #ff5722, #bf360c) }
 .grid-item:nth-child(12) { background-image: linear-gradient(135deg, #795548, #3e2723) }
 
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social div {
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+.social div:last-child { padding-right: 0 }
+.social .fa { color: #fff }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .grid-item {
-    width: 50%;     /* 2 per row */
-  }
+  .grid-item { width: 50% }   /* 2 per row */
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .grid-item {
-    width: 33.333333%;  /* 3 per row */
-  }
+  .grid-item { width: 33.333333% }    /* 3 per row */
 }
 
 /* Large devices (big desktops and TVs, 1440px and up) */
 @media (min-width: 1440px) {
-  .grid-item {
-    width: 25%;     /* 4 per row */
-  }
+  .grid-item { width: 25% }   /* 4 per row */
 }
