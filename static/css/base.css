@@ -1,26 +1,24 @@
 html { box-sizing: border-box }
 *, *:before, *:after { box-sizing: inherit }
 
-::selection { background-color: rgba(3,169,244,.2) }
-::-moz-selection { background-color: rgba(3,169,244,.2) }
+::selection { background-color: #000 }
+::-moz-selection { background-color: #000 }
 
 body {
-  background-color: #eceff1;
-  color: #263238;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Catamaran', sans-serif;
+  color: #eceff1;
+  background-color: #263238;
 }
 
 header {
   position: relative;
   z-index: 3;
-
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,.19);
-
-  background-image: linear-gradient(135deg, #455a64, #263238);
   color: #fff;
+  background-image: linear-gradient(135deg, #455a64, #263238);
+  box-shadow: 0 4px 8px rgba(0,0,0,.19);
 }
-header h1 { font-weight: 300 }
+header h1 { font-weight: 800 }
 
 .grid-container {   /* flex parent */
   display: flex;
@@ -30,12 +28,13 @@ header h1 { font-weight: 300 }
 .grid-item {    /* flex child */
   width: 100%;  /* 1 per row */
   padding: 2rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,.25);
-
-  background-color: #607d8b;
+  padding-top: 8rem;
+  padding-bottom: 0.5rem;
   color: #fff;
   font-size: 18px;
-
+  text-decoration: none;
+  background-color: #607d8b;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
   transition: all .3s cubic-bezier(.25, .8, .25, 1);
 }
 @media (min-width: 576px) {
@@ -48,43 +47,41 @@ header h1 { font-weight: 300 }
   .grid-item { width: 25% }   /* 4 per row */
 }
 .grid-item h2 {
-  font-weight: 300;
+  font-weight: 800;
   text-shadow: 0 0 10px rgba(0,0,0,.23);
 }
 .grid-item p {
-  text-shadow: 0 0 10px rgba(0,0,0,.23);
+  /*text-shadow: 0 0 10px rgba(0,0,0,.23);*/
 }
 .grid-item:hover {
   z-index: 2;
   box-shadow: 0 2px 20px rgba(0,0,0,.19), 0 1px 10px rgba(0,0,0,.23);
 }
-.grid-item:nth-child(1) { background-image: linear-gradient(135deg, #f44336, #b71c1c) }
-.grid-item:nth-child(2) { background-image: linear-gradient(135deg, #e91e63, #880e4f) }
-.grid-item:nth-child(3) { background-image: linear-gradient(135deg, #9c27b0, #4a148c) }
-.grid-item:nth-child(4) { background-image: linear-gradient(135deg, #3f51b5, #1a237e) }
-.grid-item:nth-child(5) { background-image: linear-gradient(135deg, #2196f3, #0d47a1) }
-.grid-item:nth-child(6) { background-image: linear-gradient(135deg, #00bcd4, #006064) }
-.grid-item:nth-child(7) { background-image: linear-gradient(135deg, #009688, #004d40) }
-.grid-item:nth-child(8) { background-image: linear-gradient(135deg, #4caf50, #1b5e20) }
-.grid-item:nth-child(9) { background-image: linear-gradient(135deg, #cddc39, #827717) }
-.grid-item:nth-child(10) { background-image: linear-gradient(135deg, #ffc107, #ff6f00) }
-.grid-item:nth-child(11) { background-image: linear-gradient(135deg, #ff5722, #bf360c) }
-.grid-item:nth-child(12) { background-image: linear-gradient(135deg, #795548, #3e2723) }
+.grid-item:nth-child(1) { background-image: linear-gradient(135deg, #ff5f6d, #ffc371) }
+.grid-item:nth-child(2) { background-image: linear-gradient(135deg, #ee0979, #ff6a00) }
+.grid-item:nth-child(3) { background-image: linear-gradient(135deg, #4568dc, #b06ab3) }
+.grid-item:nth-child(4) { background-image: linear-gradient(135deg, #67b26f, #4ca2cd) }
+.grid-item:nth-child(5) { background-image: linear-gradient(135deg, #ef629f, #eecda3) }
+.grid-item:nth-child(6) { background-image: linear-gradient(135deg, #ff9966, #ff5e62) }
+.grid-item:nth-child(7) { background-image: linear-gradient(135deg, #ff5f6d, #ffc371) }
+.grid-item:nth-child(8) { background-image: linear-gradient(135deg, #3494e6, #ec6ead) }
+.grid-item:nth-child(9) { background-image: linear-gradient(135deg, #ff00cc, #333399) }
+.grid-item:nth-child(10) { background-image: linear-gradient(135deg, #00c6ff, #0072ff) }
+.grid-item:nth-child(11) { background-image: linear-gradient(135deg, #43c6ac, #191654) }
+.grid-item:nth-child(12) { background-image: linear-gradient(135deg, #16a085, #f4d03f) }
 
 footer {
   position: relative;
   z-index: 3;
-
   padding: 2rem;
-  box-shadow: 0 -4px 8px rgba(0,0,0,.19);
-
-  background-image: linear-gradient(135deg, #455a64, #263238);
   color: #fff;
+  background-image: linear-gradient(135deg, #455a64, #263238);
+  box-shadow: 0 -4px 8px rgba(0,0,0,.19);
 }
 footer h2 {
   font-weight: 300;
-  text-shadow: 0 0 10px rgba(0,0,0,.23);
   text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,.23);
 }
 
 .social {
