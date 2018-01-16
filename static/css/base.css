@@ -15,8 +15,6 @@ header {
   z-index: 3;
   padding: 2rem;
   color: #fff;
-  background-image: linear-gradient(135deg, #263238, #455a64);
-  box-shadow: 0 4px 8px rgba(0,0,0,.19);
 }
 header h1 { font-weight: 800 }
 
@@ -40,7 +38,7 @@ header h1 { font-weight: 800 }
   font-size: 18px;
   text-decoration: none;
   border-radius: .2rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
   transition: all .3s cubic-bezier(.25, .8, .25, 1);
 }
 @media (min-width: 576px) {
@@ -61,7 +59,7 @@ header h1 { font-weight: 800 }
 }
 .grid-item:hover {
   z-index: 2;
-  box-shadow: 0 2px 20px rgba(0,0,0,.19), 0 1px 10px rgba(0,0,0,.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .grid-item:nth-child(1) { background-image: linear-gradient(135deg, #EF5350, #ffc371) }
 .grid-item:nth-child(2) { background-image: linear-gradient(135deg, #EC407A, #ffc371) }
@@ -81,8 +79,6 @@ footer {
   z-index: 3;
   padding: 2rem;
   color: #fff;
-  background-image: linear-gradient(135deg, #263238, #455a64);
-  box-shadow: 0 -4px 8px rgba(0,0,0,.19);
 }
 footer h2 {
   font-weight: 300;
