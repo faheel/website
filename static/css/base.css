@@ -20,31 +20,37 @@ header {
 }
 header h1 { font-weight: 800 }
 
-.grid-container {   /* flex parent */
+/* flex parent */
+.grid-container {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
 }
 
-.grid-item {    /* flex child */
-  width: 100%;  /* 1 per row */
+/* flex child */
+.grid-item {
+  width: calc(100% - 0.75rem);    /* 1 per row */
+  margin-bottom: 0.75rem;
+  margin-right: 0.75rem;
   padding: 2rem;
   padding-top: 8rem;
   padding-bottom: 0.5rem;
   color: #fff;
   font-size: 18px;
   text-decoration: none;
-  background-color: #607d8b;
+  border-radius: .2rem;
   box-shadow: 0 1px 4px rgba(0,0,0,.25);
   transition: all .3s cubic-bezier(.25, .8, .25, 1);
 }
 @media (min-width: 576px) {
-  .grid-item { width: 50% }   /* 2 per row */
+  .grid-item { width: calc(50% - 0.75rem) }   /* 2 per row */
 }
 @media (min-width: 992px) {
-  .grid-item { width: 33.333333% }    /* 3 per row */
+  .grid-item { width: calc(33.333333% - 0.75rem) }    /* 3 per row */
 }
 @media (min-width: 1440px) {
-  .grid-item { width: 25% }   /* 4 per row */
+  .grid-item { width: calc(25% - 0.75rem) }   /* 4 per row */
 }
 .grid-item h2 {
   font-weight: 800;
