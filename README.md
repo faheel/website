@@ -1,2 +1,2 @@
-# Upcoming version of my [webiste](http://www.faheel.com/)
-Currently live at [beta.faheel.com](http://beta.faheel.com/)
+# My website
+[![Website](https://img.shields.io/website-up-down-green-red/https/faheel.com.svg?label=Website&style=for-the-badge)](https://faheel.com)
