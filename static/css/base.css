@@ -6,6 +6,7 @@ html { box-sizing: border-box }
 
 body {
   font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
   color: #eceff1;
   background-color: #263238;
 }
@@ -39,14 +40,7 @@ header h2 { font-weight: 300 }
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 1rem;
-  padding-right: calc(1rem - 0.75rem);
-}
-@media (min-width: 576px) {
-  .grid-container {
-    padding-left: 2rem;
-    padding-right: calc(2rem - 0.75rem);
-  }
+  margin-right: -0.75rem;
 }
 
 /* flex child */
@@ -58,8 +52,6 @@ header h2 { font-weight: 300 }
   padding-top: 8rem;
   padding-bottom: 0.5rem;
   color: #fff;
-  font-size: 18px;
-  text-decoration: none;
   background: #37474F;
   border-radius: .2rem;
   box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
@@ -84,7 +76,8 @@ header h2 { font-weight: 300 }
   /*text-shadow: 0 0 10px rgba(0,0,0,.23);*/
 }
 
-.grid-item:hover {
+.grid-item:hover,
+.grid-item:active {
   z-index: 2;
   background: #455A64;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -99,17 +92,33 @@ a {
   text-decoration: none;
   color: #fff;
 }
+p a {
+  color: #00E676;
+}
+p a:hover,
+p a:active {
+  color: #69F0AE;
+  text-decoration: underline;
+}
+p a:visited {
+  color: #B2FF59;
+}
+
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 576px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 
 section h3 {
   margin-top: 0;
-  padding-left: 1rem;
   font-weight: 500;
   font-size: larger;
-}
-@media (min-width: 576px) {
-  section h3 {
-    padding-left: 2rem;
-  }
 }
 
 section {
@@ -128,6 +137,7 @@ footer {
   position: relative;
   z-index: 3;
   padding: 2rem;
+  font-size: 16px;
   color: #fff;
 }
 
