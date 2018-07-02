@@ -1,106 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Syed Faheel Ahmad</title>
-
-    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Syed Faheel Ahmad</title>
+    <link rel="shortcut icon" type="image/png" href="static/images/favicon.png">
 
     <!-- Browser themes -->
     <meta name="theme-color" content="#263238">
 
     <!-- Fonts -->
-    <script src="https://use.fontawesome.com/f525853f8e.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,800">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600,800">
 
     <!-- Style sheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="static/css/base.css">
 
     <style>
-      .grid-item:nth-child(1)  { background-image: linear-gradient(135deg, #EF5350, #ffc371) }
-      .grid-item:nth-child(2)  { background-image: linear-gradient(135deg, #EC407A, #ffc371) }
-      .grid-item:nth-child(3)  { background-image: linear-gradient(135deg, #AB47BC, #ffc371) }
-      .grid-item:nth-child(4)  { background-image: linear-gradient(135deg, #7E57C2, #ffc371) }
-      .grid-item:nth-child(5)  { background-image: linear-gradient(135deg, #5C6BC0, #ffc371) }
-      .grid-item:nth-child(6)  { background-image: linear-gradient(135deg, #42A5F5, #ffc371) }
-      .grid-item:nth-child(7)  { background-image: linear-gradient(135deg, #26C6DA, #ffc371) }
-      .grid-item:nth-child(8)  { background-image: linear-gradient(135deg, #26A69A, #ffc371) }
-      .grid-item:nth-child(9)  { background-image: linear-gradient(135deg, #66BB6A, #ffc371) }
-      .grid-item:nth-child(10) { background-image: linear-gradient(135deg, #FFA726, #ffc371) }
-      .grid-item:nth-child(11) { background-image: linear-gradient(135deg, #FF7043, #ffc371) }
-      .grid-item:nth-child(12) { background-image: linear-gradient(135deg, #8D6E63, #ffc371) }
+      .grid .card:nth-child(1):hover { background-color: #EF5350 }
+      .grid .card:nth-child(2):hover { background-color: #EC407A }
+      .grid .card:nth-child(3):hover { background-color: #AB47BC }
+      .grid .card:nth-child(4):hover { background-color: #5C6BC0 }
+      .grid .card:nth-child(5):hover { background-color: #42A5F5 }
+      .grid .card:nth-child(6):hover { background-color: #26A69A }
+      .grid .card:nth-child(7):hover { background-color: #66BB6A }
+      .grid .card:nth-child(8):hover { background-color: #FFA726 }
+      .grid .card:nth-child(9):hover { background-color: #FF7043 }
     </style>
   </head>
 
   <body>
     <header>
-      <h1>FAHEEL</h1>
+      <h1>Syed <b>Faheel</b> Ahmad</h1>
+
+      <nav>
+        <span class="card active">Home</span>
+        <a class="card" href="#">Projects</a>
+        <a class="card" href="#">Blog</a>
+        <a class="card" href="https://faheel.github.io/cv/">Résumé</a>
+      </nav>
     </header>
 
     <main>
-      <div class="grid-container">
-        <a class="grid-item" href="open-source">
+      <section class="banner">
+        <p>
+          I'm a recent Computer Engineering graduate, systems developer,
+          full-stack web developer, Android developer, and an open source
+          enthusiast.
+        </p>
+        <p>
+          I like to build simple, useful and beautiful interfaces, whether
+          they are UIs, CLIs or APIs for websites, apps or system software. I
+          keep learning about new and useful technologies, and also like to
+          automate things.
+        </p>
+        <p>
+          <b>You won't find any content here yet</b> as I'm currently finalising
+          the design. Until then, you can take a look at my
+          <a href="https://faheel.github.io/cv/">résumé</a> to view some my
+          projects. Once the website is complete, I'll be adding the projects
+          that I've worked on in the following categories, along with blog
+          posts in which I'll talk about some of the new and interesting things
+          I've learned from those projects.
+        </p>
+      </section>
+
+      <section class="grid">
+        <a class="card" href="#">
           <h2>Open<br>Source</h2>
         </a>
-        <a class="grid-item" href="machine-learning">
-          <h2>Machine<br>Learning</h2>
+        <a class="card" href="#">
+          <h2>Systems<br>Development</h2>
         </a>
-        <a class="grid-item" href="data-science">
-          <h2>Data<br>Science</h2>
-        </a>
-        <a class="grid-item" href="big-data">
-          <h2>Big<br>Data</h2>
-        </a>
-        <a class="grid-item" href="computer-graphics">
-          <h2>Computer<br>Graphics</h2>
-        </a>
-        <a class="grid-item" href="artificial-intelligence">
-          <h2>Artificial<br>Intelligence</h2>
-        </a>
-        <a class="grid-item" href="web-development">
+        <a class="card" href="#">
           <h2>Web<br>Development</h2>
         </a>
-        <a class="grid-item" href="android-development">
+        <a class="card" href="#">
           <h2>Android<br>Development</h2>
         </a>
-        <a class="grid-item" href="game-development">
+        <a class="card" href="#">
+          <h2>Data<br>Science</h2>
+        </a>
+        <a class="card" href="#">
+          <h2>Machine<br>Learning</h2>
+        </a>
+        <a class="card" href="#">
+          <h2>Physical<br>Computing</h2>
+        </a>
+        <a class="card" href="#">
           <h2>Game<br>Development</h2>
         </a>
-        <a class="grid-item" href="cloud-computing">
-          <h2>Cloud<br>Computing</h2>
+        <a class="card" href="#">
+          <h2>Graphic<br>Design</h2>
         </a>
-        <a class="grid-item" href="internet-of-things">
-          <h2>Internet<br>of Things</h2>
-        </a>
-        <a class="grid-item" href="robotics">
-          <h2>Robotics</h2>
-        </a>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <h2>Syed Faheel Ahmad</h2>
       <div class="social">
         <div>
           <a href="https://github.com/faheel">
-            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
         </div>
         <div>
-          <a href="https://facebook.com/SyedFaheelAhmad">
-            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+          <a href="https://linkedin.com/in/faheel">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://behance.net/faheel">
+            <i class="fab fa-behance fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div>
+          <a href="https://stackoverflow.com/story/faheel">
+            <i class="fab fa-stack-overflow fa-2x" aria-hidden="true"></i>
           </a>
         </div>
         <div>
           <a href="https://twitter.com/FaheelAhmad">
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div>
-          <a href="https://plus.google.com/+FaheelAhmadSyed">
-             <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
           </a>
         </div>
       </div>
