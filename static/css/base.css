@@ -1,199 +1,28 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-::selection {
-  color: #fff;
-  background-color: #000;
-}
-::-moz-selection {
-  color: #fff;
-  background-color: #000;
-}
-
 body {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Catamaran', sans-serif;
-  font-size: 18px;
-  line-height: 1.25;
-  color: #eceff1;
-  text-shadow: 0 0 10px rgba(0,0,0,.23);
-  background-color: #263238;
+  background-color: #fafafa;
 }
 
-
-/* ---------------------------------------------------------------------------
-  Header
---------------------------------------------------------------------------- */
-
-header {
-  padding: 1rem;
-  margin-bottom: 3rem;
-  color: #fff;
+.column.section {
+  padding: 1.5rem;
 }
-@media (min-width: 576px) {
-  header {
-    padding: 1rem 2rem;
-  }
-}
-
-header h1 {
-  font-weight: 300;
-  text-align: center;
-}
-header h1 b {
-  font-weight: 800;
-}
-
-
-/* ---------------------------------------------------------------------------
-  Nav
---------------------------------------------------------------------------- */
-
-nav {
-  display: flex;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-}
-
-nav * {
-  display: block;
-  padding: .5rem 1rem;
-}
-
-
-/* ---------------------------------------------------------------------------
-  Card
---------------------------------------------------------------------------- */
 
 .card {
-  color: #fff;
-  background-color: #37474F;
-  border-radius: .2rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
-  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+  box-shadow: 0 4px 16px rgba(0,0,0,.05);
+  border-radius: .5rem;
+  transition: all .3s cubic-bezier(.25,.8,.25,1);
 }
 .card:active,
 .card:hover {
-  background-color: #7C4DFF;
-  box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+a.card {
+  display: block;
+}
+.section.card {
+  padding: 3rem;
 }
 
-.card.active {
-  color: #fff;
-  background-color: #673AB7;
-  box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+.footer {
+  padding: 3rem 1.5rem;
+  background-color: #f6f6f6;
 }
-
-
-/* ---------------------------------------------------------------------------
-  Content
---------------------------------------------------------------------------- */
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-p {
-  text-align: justify;
-}
-
-p a {
-  color: #82B1FF;
-}
-p a:hover {
-  text-decoration: underline;
-}
-p a:active,
-p a:visited {
-  color: #B388FF;
-}
-
-main {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 2rem;
-}
-@media (min-width: 576px) {
-  main {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-section h3 {
-  margin-top: 0;
-  font-size: larger;
-  font-weight: 500;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-section:last-child {
-  margin-bottom: 0;
-}
-
-
-/* ---------------------------------------------------------------------------
-  Grid
---------------------------------------------------------------------------- */
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;   /* 1 column per row */
-  grid-row-gap: 1rem;
-  grid-column-gap: 1rem;
-}
-@media (min-width: 576px) {
-  .grid { grid-template-columns: repeat(2, 1fr) }   /* 2 columns per row */
-}
-@media (min-width: 992px) {
-  .grid { grid-template-columns: repeat(3, 1fr) }   /* 3 columns per row */
-}
-
-/* grid cell */
-.grid .card {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 8rem;
-  padding-bottom: .5rem;
-}
-
-.grid .card h2 {
-  font-weight: 800;
-  text-shadow: 0 0 10px rgba(0,0,0,.23);
-}
-
-/*.grid .card:active,
-.grid .card:hover {
-  transform: scale(1.03);
-}*/
-
-
-/* ---------------------------------------------------------------------------
-  Footer
---------------------------------------------------------------------------- */
-
-footer {
-  padding: 2rem;
-  font-size: 16px;
-  color: #fff;
-}
-
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social div {
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-}
-.social div:last-child { padding-right: 0 }
