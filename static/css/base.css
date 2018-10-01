@@ -32,6 +32,8 @@ a.card {
   padding: 3rem;
 }
 
-.footer {
-  padding: 3rem 1.5rem;
+@media (max-width: 372px) {
+  body {
+    font-size: initial;
+  }
 }
