@@ -2,6 +2,11 @@ body {
   background-color: #fafafa;
 }
 
+.hero.is-dark.is-bold .navbar-menu {
+  background: transparent;
+  box-shadow: none;
+}
+
 .column.section {
   padding: 1.5rem;
 }
