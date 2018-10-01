@@ -1,5 +1,10 @@
 body {
   background-color: #fafafa;
+  font-size: larger;
+}
+
+.button {
+  font-size: inherit;
 }
 
 .hero.is-dark.is-bold .navbar-menu {
