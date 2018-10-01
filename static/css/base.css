@@ -32,6 +32,10 @@ a.card {
   padding: 3rem;
 }
 
+.card-image {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 372px) {
   body {
     font-size: initial;
